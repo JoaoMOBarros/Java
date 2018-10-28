@@ -1,0 +1,63 @@
+/*
+* @author: Joao Marco Barros - 10315992
+* @version: 1.0
+* @releaseDate: 10/28/2018
+*/
+
+public class Animal {
+    protected String apelido;
+    protected int idade;
+    protected double peso;
+    protected String descricao;
+
+    public Animal(String a, int b, double c, String d){
+        setApelido(a);
+        setDescricao(d);
+        setIdade(b);
+        setPeso(c);
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setApelido(String apelido) {
+        this.apelido = apelido;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getApelido() {
+        return apelido;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void infoGeral(){
+        System.out.println("Nome:"+apelido+"_Idade:"+idade+"_Peso:"+peso+"_Descricao:"+descricao);
+    }
+
+    public void info(){
+        System.out.println("Nome:"+getApelido());
+        System.out.println("Idade:"+getIdade());
+        System.out.println("Peso:"+getPeso());
+        System.out.println("Descricao:"+getDescricao());
+    }
+
+}
